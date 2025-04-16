@@ -3,7 +3,7 @@ import "./globals.css";
 
 function App() {
   const [drawing, setDrawing] = createSignal<boolean>(false);
-  const [dimensions, setDimensions] = createSignal({
+  const [dimensions, _setDimensions] = createSignal({
     characterWidth: 30,
     characterHeight: 10,
     width: 0,
